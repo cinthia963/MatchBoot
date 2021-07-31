@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Matcha </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--aqui comienzo la barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-color bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/footer_logo.svg" alt=""></a>
+
+          <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="#main">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#galeria">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#people" id="navbarDropdown">
+                  Testimonios
+                </a>
+              </li>
+                </ul> 
+          </div>
+        </div>
+      </nav>
+
+<!--parte de  las imagen y texto ala par cambiar el h1 y el p -->
+<section id="main" class="back-color p-4 mt-5">
+    <div class="container-fluid text-center">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="p-2">
+          <h1 class="text-light">Build your blog </h1>
+          <p class="lead my-4 text-light">
+            We focus on help you in creating digital spaces, responsive design, interactive page and more.
+          </p>
+          <button class="btn footer-color text-light btn-lg align-items-center" data-bs-toggle="modal" data-bs-target="#enroll">
+            your email for contact
+          </button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="assets/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg" alt="" />
+    </div>
+    </section>
+
+    <!--partes de los cuadros de oferta cambiar h3 y los p que son el contenido-->
+  <section class="p-4">
+        <div class="container">
+          <div class="row text-center ">
+
+            <div class="col-md">
+              <div class="card back-color text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <h3 class="card-title mb-3">
+                    Virtual
+                  </h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea sunt quis eum,
+                    fugiat sequi!</p>
+                 <a href="#" class="btn footer-color text-light">Read more</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md">
+              <div class="card back-color text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-person-square"></i>
+                  </div>
+                  <h3 class="card-title mb-3"> Catalogue</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea sunt quis eum,
+                    fugiat sequi!</p>
+                  <a href="#" class="btn footer-color text-light">Read more</a>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-md ">
+              <div class="card back-color text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Media</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea sunt quis eum,
+                    fugiat sequi!</p>
+                  <a href="#" class="btn footer-color text-light">Read more</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+     
+<!--trabajo el carrusel cambia las imagenes las copias ala carpeta assets-->>
+<section id="galeria"class="p-4 navbar-color">
+    <div  class="container">
+        <div class="row">
+            <div class="col overflow-hidden">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/te_matcha_propiedades_beneficios_y_receta_75019_600.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/te-matcha-que-es-beneficios--1280x720x80xX.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/matcha-tea-2-900x549-1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!--parte de articulos es en card con redes sociales cabiar los p las h2, h3 lo que es contenido -->
+<section id="people" class="p-5 back-color">
+    <div class="container">
+  <h2 class="text-center text-white"> Coments about ours job</h2>
+  <p class="lead text-center text-white mb-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis est ea perspiciatis odio totam molestiae ad quas tenetur. Nihil!
+  </p>
+
+  <div class= "row g-4">
+    <div class= "col-md-6 col-lg-3 te">
+      <div class="card bg-light">
+     <div class=" card-body text-center overflow-hidden">
+       <img src="assets/foto-perfil-profesional-negocios-masculino-vestido-ropa-abrigo-utiliza-telefono-movil-moderno-enviar-mensajes-texto-sostiene-libros-texto-pega-papeles-coloridos-fondo_273609-34105.jpg"  class="card-img-top mb-3 "alt="">
+    <h3 class="card-title mb-3">Cristhian Garcia</h3>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animi expedita culpa atque totam tempora perspiciatis repellendus iste libero sunt.</p>
+    <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i> </a>  
+  </div>
+      </div>
+    </div>
+  
+    <div class= "col-md-6 col-lg-3">
+      <div class="card bg-light">
+     <div class=" card-body text-center overflow-hidden">
+       <img src="assets/foto-perfil-hombre-brutal-barba-espesa-astuta-usa-gafas-redondas-mira-pensativamente-lado_273609-17433.jpg"  class="card-img-top mb-3 "alt="">
+    <h3 class="card-title mb-3">Karen Ramos</h3>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animi expedita culpa atque totam tempora perspiciatis repellendus iste libero sunt.</p>
+    <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i> </a>  
+  </div>
+      </div>
+    </div>
+  
+    <div class= "col-md-6 col-lg-3">
+      <div class="card bg-light">
+     <div class=" card-body text-center overflow-hidden">
+       <img src="assets/foto-perfil-hipster-piel-oscura-estilo-camisa-roja-moda-sombrero-negro-tiene-telefono-inteligente-escribe-correo-electronico_273609-38602.jpg"  class="card-img-top mb-3"alt="">
+    <h3 class="card-title mb-3">Karen Trinidad</h3>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animi expedita culpa atque totam tempora perspiciatis repellendus iste libero sunt.</p>
+    <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i> </a>  
+  </div>
+      </div>
+    </div>
+  
+    <div class= "col-md-6 col-lg-3">
+      <div class="card bg-light">
+     <div class=" card-body text-center overflow-hidden">
+       <img src="assets/foto-perfil-mujer-volviendo-camara-senalando-dedo-sonrisa-satisfaccion_176420-17751.jpg" class="card-img-top mb-3 "alt="">
+    <h3 class="card-title mb-3">Familia Garcia</h3>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animi expedita culpa atque totam tempora perspiciatis repellendus iste libero sunt.</p>
+    <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-instagram text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-facebook text-dark mx-1"></i> </a>  
+    <a href="#"> <i class="bi bi-linkedin text-dark mx-1"></i> </a>  
+  </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <!--Aqui trabajamos en pie de pagina-->
+  <footer class="p-4 footer-color">
+    <div class="container text-center">
+        <p class="lead text-light"> copyright 2021, practice </p>
+        <a href="#"> <i class="bi bi-linkedin text-light fs-5 "></i> </a>  
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
